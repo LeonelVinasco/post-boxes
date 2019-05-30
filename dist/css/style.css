@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+body {
+  background: #f3f5f6;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  word-wrap: break-word;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased
+}
+
+.gravityfeatured {
+  display: flex;
+  margin: 8% auto 20px auto;
+  width: 100%;
+  overflow: hidden;
+  max-width: 970px;
+  box-shadow: 0 30px 10px -20px rgba(0, 0, 0, 0.2)
+}
+
+.gravfeatureditem {
+  background: rgba(0, 0, 0, 0.02);
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  height: 220px;
+  width: 25%
+}
+
+.gravfeatureditem .gracontent {
+  background: #3498db;
+  display: block;
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translate(0, 0);
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s
+}
+
+.gravfeatureditem:hover .gracontent {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 60px)
+}
+
+.gravfeatureditem .gracontent h3 {
+  font-size: 14px;
+  color: #fff;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+.gravfeatureditem .feat-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%
+}
+
+.gravfeatureditem a {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  vertical-align: bottom;
+  z-index: 5;
+  height: 100%;
+  transition: all .3s
+}
+
+.gravfeatureditem a:before {
+  content: '';
+  background: #3498db;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  opacity: 0;
+  transition: background 0.3s linear, opacity 0.3s linear
+}
+
+.gravfeatureditem.first a:before,
+.gravfeatureditem.first .gracontent {
+  background: #56a8df
+}
+
+.gravfeatureditem.second a:before,
+.gravfeatureditem.second .gracontent {
+  background: #e49148
+}
+
+.gravfeatureditem.third a:before,
+.gravfeatureditem.third .gracontent {
+  background: #5bccb6
+}
+
+.gravfeatureditem.fourth a:before,
+.gravfeatureditem.fourth .gracontent {
+  background: #f5b44c
+}
+
+.gravfeatureditem a:hover:before {
+  opacity: 0.9;
+}
+
+.gravfeatureditem a:after {
+  content: 'textsms';
+  font-family: Material Icons;
+  position: absolute;
+  z-index: 3;
+  font-size: 3rem;
+  top: 32%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  transform: translate(0, -60px);
+  animation: jellygrav .6s linear;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s
+}
+
+.gravfeatureditem:hover a:after {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0)
+}
+
+@media screen and (max-width:826px) {
+  .gravfeatureditem {
+    width: 50%
+  }
+  .gravfeatureditem.third,
+  .gravfeatureditem.fourth {
+    display: none
+  }
+}
+
+@media screen and (max-width:641px) {
+  .gravfeatureditem {
+    width: 100%
+  }
+  .gravfeatureditem.second,
+  .gravfeatureditem.third,
+  .gravfeatureditem.fourth {
+    display: none
+  }
+}

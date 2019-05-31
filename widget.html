@@ -1,0 +1,86 @@
+<body translate="no">
+<div class="gravityfeaturedz" id="gravityfeatured">
+<div class="widget-content"><div class="gravityfeatured"><div class="gravfeatureditem first"><div class="gracontent"><h3>Interior of Modern Bedroom with Bed</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html"><div class="feat-img" style="background-image:url(https://2.bp.blogspot.com/-K7qC0lumhqI/WLwKLkAbROI/AAAAAAAANPk/qgDS-AUbDvoOkfHOS9KMnAlCx345X8idACLcB/s1600/Gorgeous%2BColor%2BBedrooms.jpg);"></div></a></div><div class="gravfeatureditem second"><div class="gracontent"><h3>Shoes and Accessories to Gift and Get</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html"><div class="feat-img" style="background-image:url(https://1.bp.blogspot.com/-EACEUK6iwrM/WLwI-AQ80-I/AAAAAAAANPg/gwcvo-GxYRsBkqQ1K95ihWs-QM3glBr5QCLcB/s1600/Shoes%2Band%2BAccessories%2Bto%2BGift%2Band%2BGet.jpg);"></div></a></div><div class="gravfeatureditem third"><div class="gracontent"><h3>Create a Kids Scribble Space</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html"><div class="feat-img" style="background-image:url(https://4.bp.blogspot.com/-MmmCjoMktqI/WLwGxK6qPsI/AAAAAAAANPM/FyT-PbimZHcHg6QdeAxtmAHyr39YiOHFwCLcB/s1600/Create%2Ba%2BKids%2BScribble%2BSpace.jpg);"></div></a></div><div class="gravfeatureditem fourth"><div class="gracontent"><h3>How to Wear This Season</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/how-to-wear-this-season.html"><div class="feat-img" style="background-image:url(https://4.bp.blogspot.com/-lGB8XPmZjs4/WLwFUzFLaeI/AAAAAAAANPA/OWGqxgm3fU8kTQBcF5eiY_HCHsJSrYsxwCLcB/s1600/How%2Bto%2BWear%2BThis%2BSeason.jpg);"></div></a></div></div></div>
+</div>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script id="rendered-js">
+      // Recent Post
+function getPostUrl(a) {
+  for (var b = 0; b < a.link.length; b++) {if (window.CP.shouldStopExecution(0)) break;
+    if ("alternate" == a.link[b].rel) {
+      var c = a.link[b].href;
+      return c;
+    }}window.CP.exitedLoop(0);
+}
+
+function getPostPublishDate(a) {
+  var b = a.published.$t,
+  c = b.split("-")[2].substring(0, 2),
+  d = b.split("-")[1],
+  e = b.split("-")[0],
+  f = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octobor", "November", "December"],
+  g = f[d - 1],
+  h = g + " " + c + ", " + e;
+  return b ? h : "";
+}
+
+function getPostCategory(a) {
+  var b = a.category;
+  b && (b = a.category[0].term);
+  var c = '<div class="category-wrapper"><a class="category" href="https://gravitytemplate.blogspot.com/search/label/' + b + '?max-results=10">' + b + "</a></div>";
+  return b ? c : "";
+}
+
+function Slider(a) {
+  for (var c = (new Array(), ""), d = a.feed.entry.length, e = 0; e < d; e++) {if (window.CP.shouldStopExecution(1)) break;
+    var f = a.feed.entry[e],
+    g = f.title.$t,
+    h = getPostUrl(f),
+    l = (f.author[0].name.$t, getPostPublishDate(f), getPostCategory(f), f.category[0].term),
+    m = a.feed.entry[e].content.$t,
+    n = $("<div>").html(m);
+    if (m.indexOf("//www.youtube.com/embed/") > -1) var o = a.feed.entry[e].media$thumbnail.url,
+    p = o;else
+    if (m.indexOf("<img") > -1) var q = n.find("img:first").attr("src"),
+    p = q;else
+    var p = no_image;
+    0 == e && (c = c + '<div class="gravfeatureditem first"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>'), 1 == e && (c = c + '<div class="gravfeatureditem second"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>'), 2 == e && (c = c + '<div class="gravfeatureditem third"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>'), 3 == e && (c = c + '<div class="gravfeatureditem fourth"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>');
+  }window.CP.exitedLoop(1);
+  slider.html('<div class="gravityfeatured">' + c + "</div>"), $(".gravityfeatured").find(".feat-img").each(function () {
+    $(this).attr("style", function (a, b) {
+      return b.replace("/default.jpg", "/mqdefault.jpg");
+    }).attr("style", function (a, b) {
+      return b.replace("s72-c", "s1600");
+    }).attr("style", function (a, b) {
+      return b.replace("s320", "s1600");
+    }).attr("style", function (a, b) {
+      return b.replace("s400", "s1600");
+    }).attr("style", function (a, b) {
+      return b.replace("s640", "s1600");
+    });
+  });
+}
+var slider = $("#gravityfeatured .widget-content"),
+sliderContent = slider.text().trim();
+"no" !== sliderContent.toLowerCase().trim() && '"no"' !== sliderContent.toLowerCase() && "" !== sliderContent ? "[recent]" !== sliderContent ? $.ajax({
+  url: "https://gravitytemplate.blogspot.com/feeds/posts/default/-/" + sliderContent + "?alt=json-in-script&max-results=4",
+  type: "get",
+  dataType: "jsonp",
+  success: function (a) {
+    Slider(a);
+  } }) :
+$.ajax({
+  url: "https://gravitytemplate.blogspot.com/feeds/posts/default?alt=json-in-script&max-results=4",
+  type: "get",
+  dataType: "jsonp",
+  success: function (a) {
+    Slider(a);
+  } }) :
+$("#slider").remove();
+      //# sourceURL=pen.js
+    </script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+
+
+</body>

@@ -71,11 +71,11 @@ body.layout-boxed{padding:20px 10px;}
 .search-icon i{line-height:initial;padding:0 20px;display:table;margin-top:22px;font-size:22px}
 .search-button i {font-size:18px;line-height:1.5;}
 /* Featured */
-.gravityfeatured{display:flex;margin:0 auto 20px auto;width:100%;overflow:hidden;max-width:970px}
+.gravityfeatured{display:flex;margin:0 auto 20px auto;width:100%;overflow:hidden;max-width:1240px}
 .gravfeatureditem{background:rgba(0,0,0,0.02);display:block;position:relative;float:left;overflow:hidden;height:220px;width:25%}
 .gravfeatureditem .gracontent{background:#3498db;display:block;position:absolute;z-index:6;bottom:0;left:0;right:0;transform:translate(0,0);opacity:1;visibility:visible;transition:all .3s}
 .gravfeatureditem:hover .gracontent{opacity:0;visibility:hidden;transform:translate(0,60px)}
-.gravfeatureditem .gracontent h3{font-size:14px;color:#fff;padding:15px;margin:0;text-align:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.gravfeatureditem .gracontent h3{font-size:14px;color:#fff;padding:15px;margin:0;text-align:center;overflow:hidden;white-space:pre-line;text-overflow:ellipsis}
 .gravfeatureditem .feat-img{width:100%;height:100%;background-size:cover;background-position:50%}
 .gravfeatureditem a{display:block;color:rgba(255,255,255,1);position:relative;vertical-align:bottom;z-index:5;height:100%;transition:all .3s}
 .gravfeatureditem a:before{content:'';background:#3498db;width:100%;height:100%;position:absolute;z-index:3;top:0;opacity:0;transition:background 0.3s linear,opacity 0.3s linear}
@@ -84,7 +84,7 @@ body.layout-boxed{padding:20px 10px;}
 .gravfeatureditem.third a:before,.gravfeatureditem.third .gracontent{background:#5bccb6}
 .gravfeatureditem.fourth a:before,.gravfeatureditem.fourth .gracontent{background:#f5b44c}
 .gravfeatureditem a:hover:before{opacity:0.9;}
-.gravfeatureditem a:after{content:'textsms';font-family:Material Icons;position:absolute;z-index:3;font-size:3rem;top:32%;left:0;right:0;bottom:0;color:#fff;text-align:center;transform:translate(0,-60px);animation:jellygrav .6s linear;opacity:0;visibility:hidden;transition:all .3s}
+.gravfeatureditem a:after{content:'movie';font-family:Material Icons;position:absolute;z-index:3;font-size:3rem;top:32%;left:0;right:0;bottom:0;color:#fff;text-align:center;transform:translate(0,-60px);animation:jellygrav .6s linear;opacity:0;visibility:hidden;transition:all .3s}
 .gravfeatureditem:hover a:after{opacity:1;visibility:visible;transform:translate(0,0)}
 /* Footer */
 .footer-linkiu{font-size:87.5%;margin-top:45px;}
@@ -226,97 +226,6 @@ span.bubblecomm{position:absolute;background:#e67e22;color:#fff;width:24px;heigh
 .post-outer{width:100%}
 .post{margin:6px 0}}</style>
 <noscript></noscript><!-- <body><div></div> -->
-  <!-- <body translate="no"> -->
-  <div class="gravityfeaturedz" id="gravityfeatured">
-  <div class="widget-content"><div class="gravityfeatured"><div class="gravfeatureditem first"><div class="gracontent"><h3>Interior of Modern Bedroom with Bed</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html"><div class="feat-img" style="background-image:url(https://2.bp.blogspot.com/-K7qC0lumhqI/WLwKLkAbROI/AAAAAAAANPk/qgDS-AUbDvoOkfHOS9KMnAlCx345X8idACLcB/s1600/Gorgeous%2BColor%2BBedrooms.jpg);"></div></a></div><div class="gravfeatureditem second"><div class="gracontent"><h3>Shoes and Accessories to Gift and Get</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html"><div class="feat-img" style="background-image:url(https://1.bp.blogspot.com/-EACEUK6iwrM/WLwI-AQ80-I/AAAAAAAANPg/gwcvo-GxYRsBkqQ1K95ihWs-QM3glBr5QCLcB/s1600/Shoes%2Band%2BAccessories%2Bto%2BGift%2Band%2BGet.jpg);"></div></a></div><div class="gravfeatureditem third"><div class="gracontent"><h3>Create a Kids Scribble Space</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html"><div class="feat-img" style="background-image:url(https://4.bp.blogspot.com/-MmmCjoMktqI/WLwGxK6qPsI/AAAAAAAANPM/FyT-PbimZHcHg6QdeAxtmAHyr39YiOHFwCLcB/s1600/Create%2Ba%2BKids%2BScribble%2BSpace.jpg);"></div></a></div><div class="gravfeatureditem fourth"><div class="gracontent"><h3>How to Wear This Season</h3></div><a href="https://gravitytemplate.blogspot.com/2017/03/how-to-wear-this-season.html"><div class="feat-img" style="background-image:url(https://4.bp.blogspot.com/-lGB8XPmZjs4/WLwFUzFLaeI/AAAAAAAANPA/OWGqxgm3fU8kTQBcF5eiY_HCHsJSrYsxwCLcB/s1600/How%2Bto%2BWear%2BThis%2BSeason.jpg);"></div></a></div></div></div>
-  </div>
-  <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script id="rendered-js">
-        // Recent Post
-  function getPostUrl(a) {
-    for (var b = 0; b < a.link.length; b++) {if (window.CP.shouldStopExecution(0)) break;
-      if ("alternate" == a.link[b].rel) {
-        var c = a.link[b].href;
-        return c;
-      }}window.CP.exitedLoop(0);
-  }
-
-  function getPostPublishDate(a) {
-    var b = a.published.$t,
-    c = b.split("-")[2].substring(0, 2),
-    d = b.split("-")[1],
-    e = b.split("-")[0],
-    f = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octobor", "November", "December"],
-    g = f[d - 1],
-    h = g + " " + c + ", " + e;
-    return b ? h : "";
-  }
-
-  function getPostCategory(a) {
-    var b = a.category;
-    b && (b = a.category[0].term);
-    var c = '<div class="category-wrapper"><a class="category" href="https://gravitytemplate.blogspot.com/search/label/' + b + '?max-results=10">' + b + "</a></div>";
-    return b ? c : "";
-  }
-
-  function Slider(a) {
-    for (var c = (new Array(), ""), d = a.feed.entry.length, e = 0; e < d; e++) {if (window.CP.shouldStopExecution(1)) break;
-      var f = a.feed.entry[e],
-      g = f.title.$t,
-      h = getPostUrl(f),
-      l = (f.author[0].name.$t, getPostPublishDate(f), getPostCategory(f), f.category[0].term),
-      m = a.feed.entry[e].content.$t,
-      n = $("<div>").html(m);
-      if (m.indexOf("//www.youtube.com/embed/") > -1) var o = a.feed.entry[e].media$thumbnail.url,
-      p = o;else
-      if (m.indexOf("<img") > -1) var q = n.find("img:first").attr("src"),
-      p = q;else
-      var p = no_image;
-      0 == e && (c = c + '<div class="gravfeatureditem first"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>'), 1 == e && (c = c + '<div class="gravfeatureditem second"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>'), 2 == e && (c = c + '<div class="gravfeatureditem third"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>'), 3 == e && (c = c + '<div class="gravfeatureditem fourth"><div class="gracontent"><h3>' + g + '</h3></div><a href="' + h + '"><div class="feat-img" style="background-image:url(' + p + ');"></div></a></div>');
-    }window.CP.exitedLoop(1);
-    slider.html('<div class="gravityfeatured">' + c + "</div>"), $(".gravityfeatured").find(".feat-img").each(function () {
-      $(this).attr("style", function (a, b) {
-        return b.replace("/default.jpg", "/mqdefault.jpg");
-      }).attr("style", function (a, b) {
-        return b.replace("s72-c", "s1600");
-      }).attr("style", function (a, b) {
-        return b.replace("s320", "s1600");
-      }).attr("style", function (a, b) {
-        return b.replace("s400", "s1600");
-      }).attr("style", function (a, b) {
-        return b.replace("s640", "s1600");
-      });
-    });
-  }
-  var slider = $("#gravityfeatured .widget-content"),
-  sliderContent = slider.text().trim();
-  "no" !== sliderContent.toLowerCase().trim() && '"no"' !== sliderContent.toLowerCase() && "" !== sliderContent ? "[recent]" !== sliderContent ? $.ajax({
-    url: "https://gravitytemplate.blogspot.com/feeds/posts/default/-/" + sliderContent + "?alt=json-in-script&max-results=4",
-    type: "get",
-    dataType: "jsonp",
-    success: function (a) {
-      Slider(a);
-    } }) :
-  $.ajax({
-    url: "https://gravitytemplate.blogspot.com/feeds/posts/default?alt=json-in-script&max-results=4",
-    type: "get",
-    dataType: "jsonp",
-    success: function (a) {
-      Slider(a);
-    } }) :
-  $("#slider").remove();
-        //# sourceURL=pen.js
-      </script>
-  <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
-
-
-  <!-- </body> -->
-
-
-
-
-  <!--   dsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss-->
 <div class="clear"></div>
 <div class="site-wrapperiu">
 <div id="pageiu" class="siteiu">
@@ -337,11 +246,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <script type="text/javascript">//<![CDATA[
 function gravity_thumbnail(image_url,post_title){var show_default_thumbnail=true;var default_thumbnail="//1.bp.blogspot.com/-PqPvTT3-Aw4/Vf-xPMobkBI/AAAAAAAABu0/KOisr1H172g/s1600/default.png";if(show_default_thumbnail==true&&image_url=="")image_url=default_thumbnail;image_tag='<img height="auto" src="'+image_url.replace('/s72-c/','/s'+100%+'-c/')+'" class="thumbimg" alt="'+post_title+'" title="'+post_title+'" width="100%"/>';if(image_url!="")return image_tag;else return""}
 //]]></script>
-<div class="post-thumb"><a title="Interior of Modern Bedroom with Bed" href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html">
-<script type="text/javascript">document.write(gravity_thumbnail("https://2.bp.blogspot.com/-K7qC0lumhqI/WLwKLkAbROI/AAAAAAAANPk/qgDS-AUbDvoOkfHOS9KMnAlCx345X8idACLcB/s72-c/Gorgeous%2BColor%2BBedrooms.jpg","Interior of Modern Bedroom with Bed"));</script>
+<div class="post-thumb"><a title="Cuestiones de coyuntura en Nuestra América y tareas principales del presente" href="https://jairoestrada.co/#">
+<script type="text/javascript">document.write(gravity_thumbnail("https://revistaizquierda.com/images/easyblog_articles/1107/b2ap3_large_1.jpg","Cuestiones de coyuntura en Nuestra América y tareas principales del presente"));</script>
 </a></div>
 <div class="wrapost">
-<h2 class="post-title entry-title"><a title="Interior of Modern Bedroom with Bed" href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html"> Interior of Modern Bedroom with Bed </a></h2>
+<h2 class="post-title entry-title"><a title="Cuestiones de coyuntura en Nuestra América y tareas principales del presente" href="https://jairoestrada.co/#"> Cuestiones de coyuntura en Nuestra América y tareas principales del presente </a></h2>
 <div class="post-header-line-1"></div>
 <div id="post-body-7253411222768613358" class="post-body entry-content">
 <div id="summary7253411222768613358">
@@ -352,11 +261,11 @@ function gravity_thumbnail(image_url,post_title){var show_default_thumbnail=true
 <div class="clear"></div>
 </div>
 <div class="downpost">
-<div class="post-metacomment"><a onclick="" href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html#comment-form"><span class="bubblecomm">44</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
+<div class="post-metacomment"><a onclick="" href="https://jairoestrada.co/#"><span class="bubblecomm">44</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
 <div class="post-metaiu">
-<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html" rel="bookmark"><span class="published updated" title="2017-03-05T19:53:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
+<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://jairoestrada.co/#" rel="bookmark"><span class="published updated" title="2017-03-05T19:53:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
 </div>
-<div class="more-button"><a class="read-more" title="Interior of Modern Bedroom with Bed" href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html#more"><i class="material-icons">playlist_add</i></a></div>
+<div class="more-button"><a class="read-more" title="Cuestiones de coyuntura en Nuestra América y tareas principales del presente" href="https://jairoestrada.co/##more"><i class="material-icons">playlist_add</i></a></div>
 </div>
 </article>
 <div class="clear"></div>
@@ -367,11 +276,11 @@ function gravity_thumbnail(image_url,post_title){var show_default_thumbnail=true
 //<![CDATA[
 function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<t.length;i++)-1!=t[i].indexOf(">")&&(t[i]=t[i].substring(t[i].indexOf(">")+1,t[i].length));n=t.join("")}for(e=e<n.length-1?e:n.length-2;" "!=n.charAt(e-1)&&-1!=n.indexOf(" ",e);)e++;return n=n.substring(0,e-1),n+"..."}function createSnippet(n){var e=document.getElementById(n),t=snippet_count,i='<div class="snippets">'+removeHtmlTag(e.innerHTML,t)+"..."+"</div>";e.innerHTML=i}
 //]]></script>
-<div class="post-thumb"><a title="Shoes and Accessories to Gift and Get" href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html">
-<script type="text/javascript">document.write(gravity_thumbnail("https://1.bp.blogspot.com/-EACEUK6iwrM/WLwI-AQ80-I/AAAAAAAANPg/gwcvo-GxYRsBkqQ1K95ihWs-QM3glBr5QCLcB/s72-c/Shoes%2Band%2BAccessories%2Bto%2BGift%2Band%2BGet.jpg","Shoes and Accessories to Gift and Get"));</script>
+<div class="post-thumb"><a title="Reflexiones para una comprensión del momento político" href="https://jairoestrada.co/#">
+<script type="text/javascript">document.write(gravity_thumbnail("https://revistaizquierda.com/images/easyblog_articles/1105/b2ap3_large_1_editorial.png","Reflexiones para una comprensión del momento político"));</script>
 </a></div>
 <div class="wrapost">
-<h2 class="post-title entry-title"><a title="Shoes and Accessories to Gift and Get" href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html"> Shoes and Accessories to Gift and Get </a></h2>
+<h2 class="post-title entry-title"><a title="Reflexiones para una comprensión del momento político" href="https://jairoestrada.co/#"> Reflexiones para una comprensión del momento político </a></h2>
 <div class="post-header-line-1"></div>
 <div id="post-body-6184216319792883230" class="post-body entry-content">
 <div id="summary6184216319792883230">
@@ -382,11 +291,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <div class="clear"></div>
 </div>
 <div class="downpost">
-<div class="post-metacomment"><a onclick="" href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html#comment-form"><span class="bubblecomm">10</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
+<div class="post-metacomment"><a onclick="" href="https://jairoestrada.co/#"><span class="bubblecomm">10</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
 <div class="post-metaiu">
-<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html" rel="bookmark"><span class="published updated" title="2017-03-05T19:50:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
+<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://jairoestrada.co/#" rel="bookmark"><span class="published updated" title="2017-03-05T19:50:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
 </div>
-<div class="more-button"><a class="read-more" title="Shoes and Accessories to Gift and Get" href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html#more"><i class="material-icons">playlist_add</i></a></div>
+<div class="more-button"><a class="read-more" title="Reflexiones para una comprensión del momento político" href="https://jairoestrada.co/##more"><i class="material-icons">playlist_add</i></a></div>
 </div>
 </article>
 <div class="clear"></div>
@@ -397,11 +306,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 //<![CDATA[
 function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<t.length;i++)-1!=t[i].indexOf(">")&&(t[i]=t[i].substring(t[i].indexOf(">")+1,t[i].length));n=t.join("")}for(e=e<n.length-1?e:n.length-2;" "!=n.charAt(e-1)&&-1!=n.indexOf(" ",e);)e++;return n=n.substring(0,e-1),n+"..."}function createSnippet(n){var e=document.getElementById(n),t=snippet_count,i='<div class="snippets">'+removeHtmlTag(e.innerHTML,t)+"..."+"</div>";e.innerHTML=i}
 //]]></script>
-<div class="post-thumb"><a title="Create a Kids Scribble Space" href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html">
-<script type="text/javascript">document.write(gravity_thumbnail("https://4.bp.blogspot.com/-MmmCjoMktqI/WLwGxK6qPsI/AAAAAAAANPM/FyT-PbimZHcHg6QdeAxtmAHyr39YiOHFwCLcB/s72-c/Create%2Ba%2BKids%2BScribble%2BSpace.jpg","Create a Kids Scribble Space"));</script>
+<div class="post-thumb"><a title="Es momento de indignación, protesta y movilización" href="/economia/es-momento-de-indignacion-protesta-y-movilizacion">
+<script type="text/javascript">document.write(gravity_thumbnail("https://revistaizquierda.com/images/easyblog_articles/293/b2ap3_large_editorial.jpg","Es momento de indignación, protesta y movilización"));</script>
 </a></div>
 <div class="wrapost">
-<h2 class="post-title entry-title"><a title="Create a Kids Scribble Space" href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html"> Create a Kids Scribble Space </a></h2>
+<h2 class="post-title entry-title"><a title="Es momento de indignación, protesta y movilización" href="/economia/es-momento-de-indignacion-protesta-y-movilizacion"> Es momento de indignación, protesta y movilización </a></h2>
 <div class="post-header-line-1"></div>
 <div id="post-body-970323484745650088" class="post-body entry-content">
 <div id="summary970323484745650088">
@@ -412,11 +321,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <div class="clear"></div>
 </div>
 <div class="downpost">
-<div class="post-metacomment"><a onclick="" href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html#comment-form"><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
+<div class="post-metacomment"><a onclick="" href="/economia/es-momento-de-indignacion-protesta-y-movilizacion"><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
 <div class="post-metaiu">
-<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html" rel="bookmark"><span class="published updated" title="2017-03-05T19:40:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
+<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="/economia/es-momento-de-indignacion-protesta-y-movilizacion" rel="bookmark"><span class="published updated" title="2017-03-05T19:40:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
 </div>
-<div class="more-button"><a class="read-more" title="Create a Kids Scribble Space" href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html#more"><i class="material-icons">playlist_add</i></a></div>
+<div class="more-button"><a class="read-more" title="Es momento de indignación, protesta y movilización" href="/economia/es-momento-de-indignacion-protesta-y-movilizacion#more"><i class="material-icons">playlist_add</i></a></div>
 </div>
 </article>
 <div class="clear"></div>
@@ -427,11 +336,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 //<![CDATA[
 function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<t.length;i++)-1!=t[i].indexOf(">")&&(t[i]=t[i].substring(t[i].indexOf(">")+1,t[i].length));n=t.join("")}for(e=e<n.length-1?e:n.length-2;" "!=n.charAt(e-1)&&-1!=n.indexOf(" ",e);)e++;return n=n.substring(0,e-1),n+"..."}function createSnippet(n){var e=document.getElementById(n),t=snippet_count,i='<div class="snippets">'+removeHtmlTag(e.innerHTML,t)+"..."+"</div>";e.innerHTML=i}
 //]]></script>
-<div class="post-thumb"><a title="How to Wear This Season" href="https://gravitytemplate.blogspot.com/2017/03/how-to-wear-this-season.html">
-<script type="text/javascript">document.write(gravity_thumbnail("https://4.bp.blogspot.com/-lGB8XPmZjs4/WLwFUzFLaeI/AAAAAAAANPA/OWGqxgm3fU8kTQBcF5eiY_HCHsJSrYsxwCLcB/s72-c/How%2Bto%2BWear%2BThis%2BSeason.jpg","How to Wear This Season"));</script>
+<div class="post-thumb"><a title="El momento actual: ¿Se asiste a la continuidad de la implementación, o está en curso otra forma de perfidia?" href="/guerraypaz/proceso-de-paz/el-momento-actual-se-asiste-a-la-continuidad-de-la-implementacion-o-esta-en-curso-otra-forma-de-perfidia">
+<script type="text/javascript">document.write(gravity_thumbnail("https://revistaizquierda.com/images/easyblog_articles/255/b2ap3_large_3.jpg"));</script>
 </a></div>
 <div class="wrapost">
-<h2 class="post-title entry-title"><a title="How to Wear This Season" href="https://gravitytemplate.blogspot.com/2017/03/how-to-wear-this-season.html"> How to Wear This Season </a></h2>
+<h2 class="post-title entry-title"><a title="El momento actual: ¿Se asiste a la continuidad de la implementación, o está en curso otra forma de perfidia?" href="/guerraypaz/proceso-de-paz/el-momento-actual-se-asiste-a-la-continuidad-de-la-implementacion-o-esta-en-curso-otra-forma-de-perfidia"> El momento actual: ¿Se asiste a la continuidad de la implementación, o está en curso otra forma de perfidia? </a></h2>
 <div class="post-header-line-1"></div>
 <div id="post-body-4775549979432031631" class="post-body entry-content">
 <div id="summary4775549979432031631">
@@ -442,11 +351,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <div class="clear"></div>
 </div>
 <div class="downpost">
-<div class="post-metacomment"><a onclick="" href="https://gravitytemplate.blogspot.com/2017/03/how-to-wear-this-season.html#comment-form"><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
+<div class="post-metacomment"><a onclick="" href="/guerraypaz/proceso-de-paz/el-momento-actual-se-asiste-a-la-continuidad-de-la-implementacion-o-esta-en-curso-otra-forma-de-perfidia"><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
 <div class="post-metaiu">
-<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://gravitytemplate.blogspot.com/2017/03/how-to-wear-this-season.html" rel="bookmark"><span class="published updated" title="2017-03-05T19:32:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
+<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="/guerraypaz/proceso-de-paz/el-momento-actual-se-asiste-a-la-continuidad-de-la-implementacion-o-esta-en-curso-otra-forma-de-perfidia" rel="bookmark"><span class="published updated" title="2017-03-05T19:32:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
 </div>
-<div class="more-button"><a class="read-more" title="How to Wear This Season" href="https://gravitytemplate.blogspot.com/2017/03/how-to-wear-this-season.html#more"><i class="material-icons">playlist_add</i></a></div>
+<div class="more-button"><a class="read-more" title="El momento actual: ¿Se asiste a la continuidad de la implementación, o está en curso otra forma de perfidia?" href="/guerraypaz/proceso-de-paz/el-momento-actual-se-asiste-a-la-continuidad-de-la-implementacion-o-esta-en-curso-otra-forma-de-perfidia"><i class="material-icons">playlist_add</i></a></div>
 </div>
 </article>
 <div class="clear"></div>
@@ -457,11 +366,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 //<![CDATA[
 function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<t.length;i++)-1!=t[i].indexOf(">")&&(t[i]=t[i].substring(t[i].indexOf(">")+1,t[i].length));n=t.join("")}for(e=e<n.length-1?e:n.length-2;" "!=n.charAt(e-1)&&-1!=n.indexOf(" ",e);)e++;return n=n.substring(0,e-1),n+"..."}function createSnippet(n){var e=document.getElementById(n),t=snippet_count,i='<div class="snippets">'+removeHtmlTag(e.innerHTML,t)+"..."+"</div>";e.innerHTML=i}
 //]]></script>
-<div class="post-thumb"><a title="Time To Relax" href="https://gravitytemplate.blogspot.com/2017/03/time-to-relax.html">
-<script type="text/javascript">document.write(gravity_thumbnail("https://4.bp.blogspot.com/-exB828W0BO0/WLwKurVhHeI/AAAAAAAANPw/h3kgpisMWSYUrG3VropcG7M2w225jlH7gCLcB/s72-c/Time%2BTo%2BRelax.jpg","Time To Relax"));</script>
+<div class="post-thumb"><a title="Retórica meliflua y pretensiones de reforma económica brutal" href="/economia/retorica-meliflua-y-pretensiones-de-reforma-economica-brutal">
+<script type="text/javascript">document.write(gravity_thumbnail("/images/easyblog_articles/240/b2ap3_large_izq0073_a05.jpg","Retórica meliflua y pretensiones de reforma económica brutal"));</script>
 </a></div>
 <div class="wrapost">
-<h2 class="post-title entry-title"><a title="Time To Relax" href="https://gravitytemplate.blogspot.com/2017/03/time-to-relax.html"> Time To Relax </a></h2>
+<h2 class="post-title entry-title"><a title="Retórica meliflua y pretensiones de reforma económica brutal" href="/economia/retorica-meliflua-y-pretensiones-de-reforma-economica-brutal"> Retórica meliflua y pretensiones de reforma económica brutal </a></h2>
 <div class="post-header-line-1"></div>
 <div id="post-body-6506964432806776251" class="post-body entry-content">
 <div id="summary6506964432806776251">
@@ -472,11 +381,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <div class="clear"></div>
 </div>
 <div class="downpost">
-<div class="post-metacomment"><a onclick="" href="https://gravitytemplate.blogspot.com/2017/03/time-to-relax.html#comment-form"><span class="bubblecomm">2</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
+<div class="post-metacomment"><a onclick="" href="/economia/retorica-meliflua-y-pretensiones-de-reforma-economica-brutal"><span class="bubblecomm">2</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
 <div class="post-metaiu">
-<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://gravitytemplate.blogspot.com/2017/03/time-to-relax.html" rel="bookmark"><span class="published updated" title="2017-03-05T19:24:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
+<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="/economia/retorica-meliflua-y-pretensiones-de-reforma-economica-brutal" rel="bookmark"><span class="published updated" title="2017-03-05T19:24:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
 </div>
-<div class="more-button"><a class="read-more" title="Time To Relax" href="https://gravitytemplate.blogspot.com/2017/03/time-to-relax.html#more"><i class="material-icons">playlist_add</i></a></div>
+<div class="more-button"><a class="read-more" title="Retórica meliflua y pretensiones de reforma económica brutal" href="#"><i class="material-icons">playlist_add</i></a></div>
 </div>
 </article>
 <div class="clear"></div>
@@ -487,11 +396,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 //<![CDATA[
 function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<t.length;i++)-1!=t[i].indexOf(">")&&(t[i]=t[i].substring(t[i].indexOf(">")+1,t[i].length));n=t.join("")}for(e=e<n.length-1?e:n.length-2;" "!=n.charAt(e-1)&&-1!=n.indexOf(" ",e);)e++;return n=n.substring(0,e-1),n+"..."}function createSnippet(n){var e=document.getElementById(n),t=snippet_count,i='<div class="snippets">'+removeHtmlTag(e.innerHTML,t)+"..."+"</div>";e.innerHTML=i}
 //]]></script>
-<div class="post-thumb"><a title="Water Sports Require Lots of Energy" href="https://gravitytemplate.blogspot.com/2017/03/water-sports-require-lots-of-energy.html">
-<script type="text/javascript">document.write(gravity_thumbnail("https://4.bp.blogspot.com/--I_Qqi7mFas/WLwCdfbPp4I/AAAAAAAANOs/BsZdIal188wUYVb865lXkCmg4XDmRJIKgCLcB/s72-c/Water%2BSports%2BRequire%2BLots%2Bof%2BEnergy.jpg","Water Sports Require Lots of Energy"));</script>
+<div class="post-thumb"><a title="Sobre algunas definiciones no coyunturales de la coyuntura de la implementación" href="guerraypaz/proceso-de-paz/sobre-algunas-definiciones-no-coyunturales-de-la-coyuntura-de-la-implementacion-1">
+<script type="text/javascript">document.write(gravity_thumbnail("/images/easyblog_articles/262/b2ap3_large_portada.jpg","Sobre algunas definiciones no coyunturales de la coyuntura de la implementación"));</script>
 </a></div>
 <div class="wrapost">
-<h2 class="post-title entry-title"><a title="Water Sports Require Lots of Energy" href="https://gravitytemplate.blogspot.com/2017/03/water-sports-require-lots-of-energy.html"> Water Sports Require Lots of Energy </a></h2>
+<h2 class="post-title entry-title"><a title="Sobre algunas definiciones no coyunturales de la coyuntura de la implementación" href="guerraypaz/proceso-de-paz/sobre-algunas-definiciones-no-coyunturales-de-la-coyuntura-de-la-implementacion-1"> Sobre algunas definiciones no coyunturales de la coyuntura de la implementación </a></h2>
 <div class="post-header-line-1"></div>
 <div id="post-body-2152132491549702722" class="post-body entry-content">
 <div id="summary2152132491549702722">
@@ -502,11 +411,11 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <div class="clear"></div>
 </div>
 <div class="downpost">
-<div class="post-metacomment"><a onclick="" href="https://gravitytemplate.blogspot.com/2017/03/water-sports-require-lots-of-energy.html#comment-form"><span class="bubblecomm">5</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
+<div class="post-metacomment"><a onclick="" href="guerraypaz/proceso-de-paz/sobre-algunas-definiciones-no-coyunturales-de-la-coyuntura-de-la-implementacion-1"><span class="bubblecomm">5</span><i class="material-icons">forum</i></a>&nbsp;&nbsp;</div>
 <div class="post-metaiu">
-<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="https://gravitytemplate.blogspot.com/2017/03/water-sports-require-lots-of-energy.html" rel="bookmark"><span class="published updated" title="2017-03-05T19:20:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
+<div class="entry-header-metaiu"><a class="timestamp-link" title="permanent link" href="guerraypaz/proceso-de-paz/sobre-algunas-definiciones-no-coyunturales-de-la-coyuntura-de-la-implementacion-1" rel="bookmark"><span class="published updated" title="2017-03-05T19:20:00+07:00" itemprop="datePublished"><i class="material-icons">schedule</i></span></a></div>
 </div>
-<div class="more-button"><a class="read-more" title="Water Sports Require Lots of Energy" href="https://gravitytemplate.blogspot.com/2017/03/water-sports-require-lots-of-energy.html#more"><i class="material-icons">playlist_add</i></a></div>
+<div class="more-button"><a class="read-more" title="Sobre algunas definiciones no coyunturales de la coyuntura de la implementación" href="#"><i class="material-icons">playlist_add</i></a></div>
 </div>
 </article>
 <div class="clear"></div>
@@ -524,7 +433,7 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <div id="HTML96" class="widget HTML" data-version="1">
 <div class="widget-content">
 <div class="lalulintas1"><span class="rambuhijau1">300x250</span></div>
-<style type="text/css" scoped="">.lalulintas1{width:100%;height:250px;background:#fdcb6e;margin:0 auto;position:relative;}
+<style type="text/css" scoped="">.lalulintas1{width:100%;height:250px;background:guerraypaz/proceso-de-paz/sobre-algunas-definiciones-no-coyunturales-de-la-coyuntura-de-la-implementacion-1fdcb6e;margin:0 auto;position:relative;}
 .rambuhijau1{background:rgba(255,255,255,0.1);position:absolute;display:block;color:rgba(0,0,0,0.2);text-align:center;text-transform:uppercase;letter-spacing:2px;font-size:1.6rem;padding:10px;margin:5px;left:0;right:0;top:0;bottom:0;font-weight:700;line-height:14.2rem}</style>
 </div>
 </div>
@@ -534,24 +443,24 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 <ul>
 <li>
 <div class="item-content">
-<div class="item-thumbnail"><a href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html" target="_blank" rel="noopener"> <img title="Interior of Modern Bedroom with Bed" src="https://2.bp.blogspot.com/-K7qC0lumhqI/WLwKLkAbROI/AAAAAAAANPk/qgDS-AUbDvoOkfHOS9KMnAlCx345X8idACLcB/s72-c/Gorgeous%2BColor%2BBedrooms.jpg" alt="Interior of Modern Bedroom with Bed" width="72" height="72" /> </a></div>
-<div class="item-title"><a title="Interior of Modern Bedroom with Bed" href="https://gravitytemplate.blogspot.com/2017/03/interior-of-modern-bedroom-with-bed.html">Interior of Modern Bedroom with Bed</a></div>
+<div class="item-thumbnail"><a href="https://jairoestrada.co/#" target="_blank" rel="noopener"> <img title="Cuestiones de coyuntura en Nuestra América y tareas principales del presente" src="https://2.bp.blogspot.com/-K7qC0lumhqI/WLwKLkAbROI/AAAAAAAANPk/qgDS-AUbDvoOkfHOS9KMnAlCx345X8idACLcB/s72-c/Gorgeous%2BColor%2BBedrooms.jpg" alt="Cuestiones de coyuntura en Nuestra América y tareas principales del presente" width="72" height="72" /> </a></div>
+<div class="item-title"><a title="Cuestiones de coyuntura en Nuestra América y tareas principales del presente" href="https://jairoestrada.co/#">Cuestiones de coyuntura en Nuestra América y tareas principales del presente</a></div>
 <div class="item-snippet">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s standard dummy text ever sinc...</div>
 </div>
 <div class="clear"></div>
 </li>
 <li>
 <div class="item-content">
-<div class="item-thumbnail"><a href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html" target="_blank" rel="noopener"> <img title="Shoes and Accessories to Gift and Get" src="https://1.bp.blogspot.com/-EACEUK6iwrM/WLwI-AQ80-I/AAAAAAAANPg/gwcvo-GxYRsBkqQ1K95ihWs-QM3glBr5QCLcB/s72-c/Shoes%2Band%2BAccessories%2Bto%2BGift%2Band%2BGet.jpg" alt="Shoes and Accessories to Gift and Get" width="72" height="72" /> </a></div>
-<div class="item-title"><a title="Shoes and Accessories to Gift and Get" href="https://gravitytemplate.blogspot.com/2017/03/shoes-and-accessories-to-gift-and-get.html">Shoes and Accessories to Gift and Get</a></div>
+<div class="item-thumbnail"><a href="https://jairoestrada.co/#" target="_blank" rel="noopener"> <img title="Reflexiones para una comprensión del momento político" src="https://1.bp.blogspot.com/-EACEUK6iwrM/WLwI-AQ80-I/AAAAAAAANPg/gwcvo-GxYRsBkqQ1K95ihWs-QM3glBr5QCLcB/s72-c/Shoes%2Band%2BAccessories%2Bto%2BGift%2Band%2BGet.jpg" alt="Reflexiones para una comprensión del momento político" width="72" height="72" /> </a></div>
+<div class="item-title"><a title="Reflexiones para una comprensión del momento político" href="https://jairoestrada.co/#">Reflexiones para una comprensión del momento político</a></div>
 <div class="item-snippet">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s standard dummy text ever sinc...</div>
 </div>
 <div class="clear"></div>
 </li>
 <li>
 <div class="item-content">
-<div class="item-thumbnail"><a href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html" target="_blank" rel="noopener"> <img title="Create a Kids Scribble Space" src="https://4.bp.blogspot.com/-MmmCjoMktqI/WLwGxK6qPsI/AAAAAAAANPM/FyT-PbimZHcHg6QdeAxtmAHyr39YiOHFwCLcB/s72-c/Create%2Ba%2BKids%2BScribble%2BSpace.jpg" alt="Create a Kids Scribble Space" width="72" height="72" /> </a></div>
-<div class="item-title"><a title="Create a Kids Scribble Space" href="https://gravitytemplate.blogspot.com/2017/03/create-kids-scribble-space.html">Create a Kids Scribble Space</a></div>
+<div class="item-thumbnail"><a href="/economia/es-momento-de-indignacion-protesta-y-movilizacion" target="_blank" rel="noopener"> <img title="Es momento de indignación, protesta y movilización" src="https://4.bp.blogspot.com/-MmmCjoMktqI/WLwGxK6qPsI/AAAAAAAANPM/FyT-PbimZHcHg6QdeAxtmAHyr39YiOHFwCLcB/s72-c/Create%2Ba%2BKids%2BScribble%2BSpace.jpg" alt="Es momento de indignación, protesta y movilización" width="72" height="72" /> </a></div>
+<div class="item-title"><a title="Es momento de indignación, protesta y movilización" href="/economia/es-momento-de-indignacion-protesta-y-movilizacion">Es momento de indignación, protesta y movilización</a></div>
 <div class="item-snippet">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s standard dummy text ever sinc...</div>
 </div>
 <div class="clear"></div>
@@ -566,8 +475,8 @@ function removeHtmlTag(n,e){if(-1!=n.indexOf("<")){for(var t=n.split("<"),i=0;i<
 </li>
 <li>
 <div class="item-content">
-<div class="item-thumbnail"><a href="https://gravitytemplate.blogspot.com/2017/03/time-to-relax.html" target="_blank" rel="noopener"> <img title="Time To Relax" src="https://4.bp.blogspot.com/-exB828W0BO0/WLwKurVhHeI/AAAAAAAANPw/h3kgpisMWSYUrG3VropcG7M2w225jlH7gCLcB/s72-c/Time%2BTo%2BRelax.jpg" alt="Time To Relax" width="72" height="72" /> </a></div>
-<div class="item-title"><a title="Time To Relax" href="https://gravitytemplate.blogspot.com/2017/03/time-to-relax.html">Time To Relax</a></div>
+<div class="item-thumbnail"><a href="#" target="_blank" rel="noopener"> <img title="Retórica meliflua y pretensiones de reforma económica brutal" src="https://4.bp.blogspot.com/-exB828W0BO0/WLwKurVhHeI/AAAAAAAANPw/h3kgpisMWSYUrG3VropcG7M2w225jlH7gCLcB/s72-c/Time%2BTo%2BRelax.jpg" alt="Retórica meliflua y pretensiones de reforma económica brutal" width="72" height="72" /> </a></div>
+<div class="item-title"><a title="Retórica meliflua y pretensiones de reforma económica brutal" href="#">Retórica meliflua y pretensiones de reforma económica brutal</a></div>
 <div class="item-snippet">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s standard dummy text ever sinc...</div>
 </div>
 <div class="clear"></div>

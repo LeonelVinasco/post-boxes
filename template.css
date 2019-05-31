@@ -2230,8 +2230,8 @@ header#sp-header #sp-search .search {
   width: 100%;
   background: #d45500;
   position: absolute;
-  right: -85vh;
-  width: 100vh;
+  right: -0vh; -50
+  width: 60vh;
 }
 header#sp-header #sp-search .search input {
   border-radius: 0px;

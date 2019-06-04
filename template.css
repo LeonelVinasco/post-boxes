@@ -2215,7 +2215,7 @@ nav.sp-megamenu-wrapper ul.jd-dropdown-menu li a {
 }
 #sp-logo-and-banner #sp-logo .logo {
   padding: 20px 0px 0px;
-  display: none;
+  /*display: none;*/
 }
 /* ----- header ----- */
 header#sp-header {
@@ -2528,6 +2528,7 @@ a.sp-scroll-up {
 #eb div.eb-posts .eb-post-content .eb-post-thumb .eb-post-image img {
   padding: 0px;
   height: 250px;
+  border: 2px solid #2b2b2c;
 }
 #eb div.eb-posts .eb-post-content .eb-post-head h2 a {
   font-size: 21px;
@@ -2546,13 +2547,14 @@ a.sp-scroll-up {
   font-weight: 400;
 }
 #eb div.eb-posts .eb-post-content .eb-post-date .eb-meta-date {
-  color: #a5a5a5;
-  font-size: 14px;
+  color: #57BDA9;/*#a5a5a5;*/
+  font-size: 20px;
   font-weight: 400;
 }
 #eb .eb-entry .eb-image img {
   padding: 0px;
   border-radius: 0px;
+  border: 1px solid #000000;
 }
 #eb .eb-entry .eb-entry-head .eb-meta-author a {
   color: #a5a5a5;

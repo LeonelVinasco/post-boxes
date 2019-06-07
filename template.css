@@ -795,7 +795,7 @@ table.category thead > tr th, table.category tbody > tr th, table.category thead
 }
 .sp-scroll-up:hover, .sp-scroll-up:active, .sp-scroll-up:focus {
   color: #fff;
-  background: #444;
+  /*background: #444;*/
 }
 .control-group {
   margin-bottom: 1rem;
@@ -1960,7 +1960,7 @@ div.login .justify-content-center .list-group .list-group-item {
   box-shadow: none;
 }
 #sp-main-body {
-  padding: 50px 0;
+  padding: 0px 0;
 }
 /* ----- Slider ----- */
 section#sp-slider {
@@ -2229,8 +2229,8 @@ header#sp-header #sp-search .search {
   width: 100%;
   background: #46c59c;
   position: absolute;
-  right: -85vh;
-  width: 100vh;
+  right: -0.5vh;
+  width: 30vh;
 }
 header#sp-header #sp-search .search input {
   border-radius: 0px;
@@ -2279,12 +2279,12 @@ header#sp-header #sp-search .search .drop-down-search {
   transform: translate3d(0px, 20px, 0px);
   transition: all 0.4s ease 0s;
   visibility: hidden;
-  width: 400px;
+  width: 300px;
 }
 header#sp-header #sp-search .search .drop-down-search.open_search_box {
   opacity: 1;
   pointer-events: auto;
-  transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, -60px, 0px);
   visibility: visible;
 }
 /* ----- Title Box ------ */
@@ -2349,6 +2349,7 @@ footer#sp-footer ul.social-icon li:last-child {
   background: #080808;
   border-top: 1px solid #202020;
   padding: 30px 0px;
+  margin: 0px 27px;
 }
 #sp-copyright span {
   color: #fff;
@@ -2539,6 +2540,7 @@ a.sp-scroll-up {
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 15px;
+  display:none;
 }
 #eb div.eb-posts .eb-post-content .eb-post-author a {
   color: #a5a5a5;
@@ -2550,10 +2552,14 @@ a.sp-scroll-up {
   font-size: 20px;
   font-weight: 400;
   background-color:#46C59C;
+  border-radius: 8px;
+  border:1px solid #46C59C;
+  padding: 1px 4px 4px 4px;
 }
 #eb .eb-entry .eb-image img {
   padding: 0px;
   border-radius: 0px;
+  border: 1px solid #a39696;
 }
 #eb .eb-entry .eb-entry-head .eb-meta-author a {
   color: #a5a5a5;
